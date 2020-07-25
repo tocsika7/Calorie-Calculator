@@ -10,11 +10,11 @@ $alert_msg = '';
 
 if(filter_has_var(INPUT_POST,'submit')){
 
-    $name = $_POST['name'];
-    $calories = $_POST['calories'];
-    $fat = $_POST['fat'];
-    $carbs = $_POST['carbs'];
-    $protein = $_POST['protein'];
+    $name = htmlentities($_POST['name']);
+    $calories = htmlentities($_POST['calories']);
+    $fat = htmlentities($_POST['fat']);
+    $carbs = htmlentities($_POST['carbs']);
+    $protein = htmlentities($_POST['protein']);
 ;
 
     //Empty values
