@@ -4,6 +4,10 @@ class FoodDB extends Dbh{
 
 
     protected function insertFood($person_id, $name, $calories, $carbs,$protein,$fat){
+
+        $name = mysqli_real_escape_string($this->connect(), $name);
+        
+
         $sql = "INSERT INTO food (person_id, name, calories ,carbs, protein, fat) VALUES ($person_id, '$name', $calories, $carbs, $protein, $fat);";
         $this->connect()->query($sql);
     }

@@ -64,8 +64,7 @@
                     <div class="food-info-box">
                         <div class="food-info protein"><?php echo "P: ". $f['protein'] ?></div>
                         <div class="food-info fat"><?php echo "F: ". $f['fat'] ?></div>
-                        <div class="food-info carbs"><?php echo "C: ".$f['carbs'] ?></div> 
-                        
+                        <div class="food-info carbs"><?php echo "C: ".$f['carbs'] ?></div>              
                    </div>  
                 </div>
                 <br>

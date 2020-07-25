@@ -4,6 +4,10 @@ class PersonDB extends Dbh{
 
 
     protected function insertPerson($name, $age, $weight){
+
+        $name = mysqli_real_escape_string($this->connect(), $name);
+
+        
         $sql = "INSERT INTO person (name, age ,weight) VALUES ('$name', $age, $weight)";
         $this->connect()->query($sql);
 
