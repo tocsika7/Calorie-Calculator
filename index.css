@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    background-image: url(/img/bg2.jpg);
+}
+
+body {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 90vh;
+    border: thick solid black;
+}
+
+.welcome {
+    text-align: center;
+    position: relative;
+    background-color: dodgerblue;
+    border: thin solid black;
+    display: flex;
+    padding: 2%;
+    margin-bottom: auto;
+}
+
+.welcome .info-container{
+    color: aliceblue;
+    position: absolute;
+    left: 80%;
+    bottom: 0%;
+    top: 0;
+    padding: 2%;
+    text-align: left;
+    margin: auto;
+    
+}
+
+.welcome .info-container .user-info{
+    display: inline-block;
+    border: thin solid black;
+    margin-bottom: 10%;
+    color: aliceblue;
+    background-color: darkslategray;
+    padding: 0;
+    margin-bottom: 3%;
+}
+
+.welcome h4{
+    border: medium solid black;
+    padding: 1%;
+    color: aliceblue;
+    background-color: darkslategray;
+}
+
+
+
+
+.intake-box{
+    position: absolute;
+    left: 75%;
+    top: 0;
+    bottom: 0;
+    text-align: left;
+    border-left: thick solid black;
+    width: 25%;
+    min-height: 100%;
+    font-size: medium;
+    background-color: gold;
+}
+
+.intake-box > h3 {
+    text-align: center;
+    border: thin solid black;
+    margin: 3%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    background-color: rgb(201, 144, 0);
+    color: white;
+}
+
+
+.intake-box .intake {
+    margin: 3%;
+    border: thin solid rgb(15, 15, 15);
+    text-align: center;
+    color: white;
+}
+
+.intake-box .kcal{
+    background-color: gray;
+}
+
+.intake-box .protein {
+    background-color: cornflowerblue;
+}
+
+.intake-box .fat {
+    background-color: purple;
+}
+
+.intake-box .carbs{
+    background-color: goldenrod;
+}
+
+.home{
+    display: flex;
+    padding: 3%;
+    position: relative;
+    border: thick solid black;
+    background-color: rgb(158, 6, 158);
+    color: white;
+    border-left: none;
+}
+
+.add-food h2{
+    border: medium solid black;
+    padding: 2%;
+    background-color: darkslateblue;
+
+}
+
+.home .add-food form input {
+    width: 100%;
+    padding: 2%;
+    background: ghostwhite;
+    color: #333;
+    box-shadow: none;
+    border: medium solid black;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 3%;
+}
+
+.home .add-food input[type='submit'] {
+    max-width: 100px;
+    background: darkslateblue;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+
+.add-food .alert{
+    padding: 2%;
+    border: thin solid white;
+    background-color: firebrick;
+}
+
+.foods-eaten{
+    display: block;
+    background-color: darkslateblue;
+    border: thin solid black;
+    min-height: 32vh;
+    max-height: 150vh;
+    padding: 2%;
+}
+
+.foods-eaten .food{
+    color: black;
+    display: inline-flex;
+    width: 40%;
+    border: thick solid black;
+    background-color: mistyrose;
+    transition: 0.5s;
+}
+
+.foods-eaten .food h3{
+    display: block;
+    width: 80%;
+    padding-left: 5%;
+    font-weight: 100;
+}
+
+.foods-eaten .food-info-box{
+    border-left: thick solid black;
+    font-size: x-small;
+    text-align: center;
+    width: 20%;
+}
+
+.foods-eaten .food-info-box .food-info{
+    display: block;
+    border: medium solid black;
+    width: 100%;
+    color: white
+}
+
+.foods-eaten .food-info-box .protein{
+    background-color: cornflowerblue;
+}
+
+.foods-eaten .food-info-box .fat{
+    background-color: purple;
+}
+
+.foods-eaten .food-info-box .carbs{
+    background-color: goldenrod;
+}
+
+.foods-eaten > h3{
+    background-color: purple;
+    border: medium solid black;
+    display: inline-block;
+    margin-bottom: 4%;
+    padding: 1%;
+    width: 35%;
+    font-size: x-large;
+    color: aliceblue;
+}
+
